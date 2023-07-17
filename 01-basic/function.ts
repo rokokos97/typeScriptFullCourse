@@ -21,7 +21,8 @@ function sum1(a:number, b:number, c?:number):number {
 // sum1(10,11,11,11)
 // задавши параметр опціонально при викликанні функції він може додаватись опціонально
 
-function averige(...spr: number[]){
+export function avarige(...spr: number[]){
     const sum = spr.reduce((current,total) => current+total, 0)
+    return sum/ spr.length
 }
 // для спред оператора за замовчанням значення завжди буде массивом. Важливо не забувати вказати що це буде за масив. Тобто типізувати елементи массива.
